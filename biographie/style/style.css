@@ -1,0 +1,193 @@
+html {
+  background-color: #f4f4f4;
+}
+
+@font-face {
+  font-family: "Cantarell-Bold";
+  src: url("../../fonts/Cantarell-Bold.ttf");
+}
+@font-face {
+  font-family: "Cantarell-Oblique";
+  src: url("../../fonts/Cantarell-Oblique.ttf");
+}
+
+@font-face {
+  font-family: "AlexBrush";
+  src: url("../../fonts/AlexBrush-Regular.ttf");
+}
+
+/***Ceci est la transition de toutes les images***/
+img{
+  transition: transform 0.3s ease;
+}
+
+img:hover{
+  transform: scale(1.1); 
+}
+
+/***Voici toute la partie Header***/
+header {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 20%;
+  font-family: "Cantarell-Bold";
+  margin-top: -1% ;
+  margin-left: -1%;
+  margin-right: -1%;
+  padding-top: 1% ;
+}
+
+nav ul li a{
+  padding: 4%;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  color: #07006e;
+  transform: scale(1.2);
+}
+
+#photographie:hover , #oeuvres:hover, #accueil:hover{
+  background-color: #bcc1c947;
+}
+
+.Logo{
+  margin-left: 24%;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+#biographie {
+  border: #babcc0 solid 2px;
+  margin-left: 24%;
+  margin-right: 24%;
+}
+
+/***Toute la partie article autrement dit toutes les infos***/
+p {
+  font-family: "Cantarell-Oblique";
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5%;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+/***Cette partie c'est la premiére partie du haut***/
+.bloc1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+  padding: 10%;
+  padding-bottom: 15%;
+}
+
+.bloc1 > img {
+  height: 100%;
+  width: 100%;
+  padding: 4%;
+  background-color: #ffc3be28;
+}
+
+/***Ceci est la deuxiéme partie des informations en bas***/
+.bloc2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4%;
+  padding: 10%;
+  padding-top: 4%;
+}
+
+.bloc2 > img {
+  height: 90%;
+  width: 81%;
+  padding: 4%;
+  background-color: #ffc3be2a;
+}
+
+/***Modification sur le premier paragraphe***/
+.texte1{
+  padding: 0% 15%;
+  text-align: justify;
+  margin: auto;
+}
+/***Modification sur le deuxiéme paragraphe***/
+.texte2{
+  padding: 0% 13%;
+  text-align: justify;
+  margin: auto;
+}
+
+/***Modification sur la phrase see music dan le deuxieme paragraphe***/
+.seeMusic {
+  border-bottom: #07006e solid 2px;
+  color: #ff8484;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.seeMusic:hover {
+  text-shadow: #eeff00 1px 0 10px;
+}
+/***Modification sur la premiere lettre du premier paragraphe***/
+
+.texte1 > p:first-of-type::first-letter {
+  color: #ffc3be;
+  font-family: "AlexBrush";
+  font-size: 200%;
+}
+
+/***Modification sur le hr***/
+hr{
+  color: #07006e;
+  border-radius: 10%;
+  width: 90%;
+}
+
+/***Responsivité***/
+
+@media (max-width: 800px) {
+  header img{
+    width: 80%;
+  }
+  nav{
+    margin-right: 5%;
+  }
+  #biographie{
+    margin: 0% 1%;
+  }
+  .bloc1 ,.bloc2{
+    grid-template-columns: 1fr;
+  }
+  .texte1 ,.texte2{
+    padding: 0%;
+    font-size: small
+  }
+}
+@media (max-width: 600px) {
+  nav ul{
+    grid-template-columns: 1fr 1fr;
+  }
+  footer aside .contact ul{
+    grid-template-columns: 1fr 1fr;
+  }
+}

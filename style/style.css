@@ -1,0 +1,342 @@
+html {
+  background-color: #f4f4f4;
+}
+
+@font-face {
+  font-family: "Cantarell-Bold";
+  src: url("../fonts/Cantarell-Bold.ttf");
+}
+@font-face {
+  font-family: "Cantarell-Oblique";
+  src: url("../fonts/Cantarell-Oblique.ttf");
+}
+
+@font-face {
+  font-family: "AlexBrush";
+  src: url("../fonts/AlexBrush-Regular.ttf");
+}
+
+img{
+  transition: transform 0.3s ease;
+}
+
+img:hover{
+  transform: scale(1.1); 
+}
+
+/*Cette partie la c'est pour la banniére*/
+
+header {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 20%;
+  font-family: "Cantarell-Bold";
+  margin-top: -1% ;
+  margin-left: -1%;
+  margin-right: -1%;
+  padding-top: 1% ;
+}
+
+nav ul li a{
+  padding: 4%;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  color: #07006e;
+  transform: scale(1.2);
+}
+
+#biographie:hover , #oeuvre:hover, #photographie:hover{
+  background-color: #bcc1c947;
+}
+
+.Logo{
+  margin-left: 24%;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#accueil{
+  border: #babcc0 solid 2px;
+  margin: 0% 24%;
+}
+
+
+/*Cette partie modifie l'article et le sépare en 2 parties une pour les images et l'autre pour le texte*/
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4%;
+  margin-top: 2%;
+}
+
+.image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0%;
+  margin-left: 8%;
+}
+
+
+body {
+  text-align: center;
+}
+.picture1,.picture2 {
+  text-align: center;
+}
+main img {
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+article{
+  margin-top:20%;
+  font-family: "Cantarell-Oblique";
+  text-align: justify;
+  margin-right: 29%;
+}
+
+
+.assis {
+  margin-top: 40%;
+  width: 80%;
+  height: 50%;
+  position: relative;
+  border-radius: 5%;
+  box-shadow: 10px 5px 5px rgba(158, 158, 158, 0.74);
+  opacity: 98%;
+}
+
+.oeuvre {
+  width: 119%;
+  height: 85%;
+  border-radius: 4%;
+  opacity: 80%;
+}
+
+.oeuvre p {
+  color: rgb(65, 65, 65);
+  font-family: "Cantarell-Bold";
+  margin-top: 0%;
+  text-align: center;
+  font-size: 80%;
+}
+
+.oeuvre:hover {
+  opacity: revert;
+}
+
+article p::first-letter {
+  font-size: 180%;
+  font-family: "AlexBrush";
+  color: #ffc3be;
+}
+
+article h1{
+  color: #07006e;
+}
+
+#titreparag{
+  text-align: center;
+  font-family: "Cantarell-Bold";
+  font-size: 250%;
+}
+
+#soustitre{
+  text-align: center;
+  letter-spacing: 7px;
+  font-size: small;
+  margin-top: -5%;
+}
+
+/*Cette partie c'est pour les 2 photos en bas qui divise encore une fois ma partie en 2 blocs*/
+
+.bas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 600px;
+  justify-content: center;
+}
+
+.picture1 img, .picture2 img {
+  width: 59%;
+  height: 76%;
+  box-shadow: 6px 5px 5px rgba(158, 158, 158, 0.4);
+}
+
+.picture1 img:hover {
+  box-shadow: 10px 5px 5px #9790ff8f;
+}
+
+.picture2 img:hover {
+  box-shadow: 10px 5px 5px #ffc3be98;
+}
+
+.picture1 h2, .picture2 h2 {
+  font-family: "Cantarell-Bold";
+  text-transform: uppercase;
+  margin-top: 10%;
+  margin-right: 0%;
+}
+
+.picture1 > p {
+  color: grey;
+  font-family: "Cantarell-Bold";
+  margin-left: 0%;
+  opacity: 0.5;
+}
+
+hr {
+  opacity: 0.5;
+  border: none;
+  border-top: dotted #ffc3be;
+  width: 90%;
+}
+
+
+.infos > h1 {
+  color: #07006e;
+}
+
+h2::first-letter {
+  font-family: "AlexBrush";
+  font-size: 200%;
+  color: #07006e;
+}
+
+/*Cette partie la concerne toutes les modifications faites sur le footer*/
+
+footer{
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 10%;
+  padding: 5%;
+  margin-left: -1%;
+  margin-right: -1%;
+  margin-bottom: -1%;
+  background-color: #ffdbd82e;
+}
+
+footer li{
+  font-family: "Cantarell-Oblique";
+}
+
+footer p{
+  font-family: "Cantarell-Bold";
+}
+
+.realisation{
+  text-align: center;
+}
+
+.infosGunther{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 5%
+}
+
+.insta img, .email img{
+  width: 60px;
+  height: 60px;
+}
+
+.twitter img , .site img{
+  width: 54px;
+  height: 54px;
+}
+
+.twitter img{
+  border-radius: 5%;
+}
+
+.sources ul{
+  text-align: center;
+  margin-top: 6%;
+}
+
+.realisation{
+  font-size: small;
+  margin-top: 2%;
+  color: gray;
+  opacity: 0.5;
+} 
+
+.contact p::first-letter , .sources p::first-letter{
+  font-size: 200%;
+  font-family: "AlexBrush";
+}
+
+.sources ul li:hover{
+  text-shadow: #07006e94 1px 0 10px;
+}
+
+/*Responsivité*/
+
+@media (max-width: 800px) {
+  header img{
+    width: 80%;
+  }
+  nav{
+    margin-right: 10%;
+  }
+  #accueil{
+    margin: 0% 12%;
+  }
+  main {
+    grid-template-columns: 1fr ;
+  }
+  article{
+    margin-top: 0%;
+    margin: 0% auto;
+  }
+  hr{
+    margin-top: 6%;
+  }
+  .picture1 img, .picture2 img {
+    width: 73%;
+    height: 55%;
+  }
+  footer li a{
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul{
+    grid-template-columns: 1fr 1fr;
+  }
+  footer aside .contact ul{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .bas {
+    grid-template-columns: 1fr;
+  }
+  .infosGunther{
+    grid-template-columns: 1fr;
+  }
+}

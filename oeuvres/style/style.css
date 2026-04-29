@@ -1,0 +1,229 @@
+html{
+    background-color: #f4f4f4 ;
+}
+
+@font-face {
+    font-family: "Cantarell-Bold";
+    src: url("../../fonts/Cantarell-Bold.ttf");
+}
+@font-face {
+    font-family: "Cantarell-Oblique";
+    src: url("../../fonts/Cantarell-Oblique.ttf");
+}
+
+@font-face {
+    font-family: "AlexBrush";
+    src: url("../../fonts/AlexBrush-Regular.ttf");
+}
+
+body{
+    text-align: center;
+}
+
+/***Transitions sur les images***/
+img, video{
+    transition: transform 0.3s ease;
+}
+  
+img:hover, video:hover{
+    transform: scale(1.07); 
+}
+
+/***cette partie c'est toutes les modifications sur le header***/
+
+header{
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 20%;
+    font-family: "Cantarell-Bold";
+    margin-top: -1% ;
+    margin-left: -1%;
+    margin-right: -1%;
+    padding-top: 1% ;
+}
+  
+nav ul li a{
+    padding: 4%;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+  
+nav ul li a:hover {
+    color: #07006e;
+    transform: scale(1.2);
+}
+
+#biographie:hover , #accueil:hover, #photographie:hover{
+    background-color: #bcc1c947;
+}
+.Logo{
+    margin-left: 24%;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 0%;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#oeuvresmenu {
+    border: #babcc0 solid 2px;
+    margin-left: 24%;
+    margin-right: 24%;
+}
+
+/***modifications sur tout le contenu du main***/
+
+main{
+    margin-top:5% ;
+    text-align: center;
+}
+
+/***modifications sur toutes les images du main***/
+
+main img{
+    border-radius: 5%;
+}
+
+/***modifications sur touts les bloc***/
+
+figure{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+}
+
+/***modifications sur la video du 3eme blocs de images***/
+
+video{
+    height: 30%;
+    width: 73%;
+    border-radius: 10%;
+    box-shadow: 10px 5px 5px rgb(158, 158, 158)
+}
+
+/***modifications sur touts les texts à coté des images***/
+
+figcaption{
+    margin: auto;
+}
+
+h3{
+    font-family: "Cantarell-Bold";
+    color: #07006e;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: "Cantarell-Oblique";
+}
+
+/***modifications sur touts les hr***/
+hr{
+    color: #ffc3be;
+    width: 80%;
+    border-radius: 5%;
+}
+
+/***modification de la taille du small***/
+
+small{
+    font-size: 82%;
+}
+
+/***modification de la taille de l'image du bloc2***/
+
+.oeuvre2img > img{
+    height: 90%;
+}
+
+/***modification sur le petit paragraphe du 2eme bloc***/
+
+#paragraph{
+    font-size: smaller;
+    margin: 0% 19%;
+    text-align: justify;
+}
+
+/***modifications sur le shadow des images quand on passes dessus***/
+
+.elt1:hover{
+    box-shadow: #958dff 1px 0 10px;
+}
+
+.elt2:hover{
+    box-shadow: #ff857a 1px 0 10px;
+}
+
+video:hover{
+    box-shadow: rgb(255, 164, 78) 1px 0 10px;
+}
+
+.milieu:hover{
+    box-shadow: rgb(255, 164, 78) 1px 0 10px;
+}
+
+/***Responsivité***/
+
+@media (max-width: 800px) {
+    header img{
+      width: 80%;
+    }
+    nav{
+      margin-right: 5%;
+    }
+    #oeuvresmenu{
+      margin: 0% 10%;
+    }
+    .oeuvre1,.oeuvre3, .oeuvre4 , .oeuvre2{
+        grid-template-columns: 1fr;
+    }
+    .oeuvre2img > img {
+        height: 60%;
+        margin-left: -14%;
+    }
+    #fig3 , #fig4 {
+        margin-left: 10%;
+    }
+    #fig2{
+        margin-left: -18%;
+        margin-top: -20%;
+    }
+    .oeuvre3 img , .oeuvre4 img{
+        width: 94%;
+    }
+    .oeuvre5 img{
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    nav ul{
+      grid-template-columns: 1fr 1fr;
+    }
+    footer aside .contact ul{
+      grid-template-columns: 1fr 1fr;
+    }
+    body{
+        font-size:small ;
+    }
+    #fig1{
+        margin-left: 10%;
+    }
+    figure{
+        grid-template-columns: 1fr;
+    }
+    hr{
+        margin: 15% auto;
+    }
+}
